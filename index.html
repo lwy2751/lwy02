@@ -148,8 +148,8 @@
                         </p>
                         <p>责任描述：
                         </p>
-                        <p>1. 遥控组包数据一般由键值、计步值、加密数据、校验值组成，通过逻辑分析仪采数，结合 EEPROM 的数据分析，获取程序分析的切入点；<p>
-                        <p>2. 通过反汇编静态分析工具 IDA 查看汇编代码，得到加密数据算法；<P>
+                        <p>1. 遥控组包数据一般由键值、计步值、加密数据、校验值组成，通过逻辑分析仪采数，结合 EEPROM 的数据分析，获取程序分析的切入点；</p>
+                        <p>2. 通过反汇编静态分析工具 IDA 查看汇编代码，得到加密数据算法；</P>
                         <p>3. 用 C语言封装加密算法，形成高频组包数据，楼下找车测试，确认算法正确后形成协议文档。</p>
                     </li>
                     <li>
@@ -176,10 +176,23 @@
                         <p>6. 负责TPMS工具（TS508/TS408, TS501/TS601, TS401, TS201）版本的提测和发布。</P>
                     </li>
                     <li>
-                        <h3>基于 Live2D 与 clmtrackr 的山寨 Facerig</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <h3>3.胎压传感器烧录治具</h3>
+                        <p>所属公司：
                         </p>
+                        <p>深圳市道通科技股份有限公司
+                        </p>
+                        <p>
+                        </p>
+                        <p>项目描述：
+                        </p>
+                        <p>
+                               本产品用于工厂胎压传感器出厂时批量烧录程序的烧录治具，主控芯片为 STM32F407，通过对竞品烧录传感器时进行采数，再结合 NXP FXTH871 胎压检测芯片的指令手册，对采集的数据进行分析，逆向出烧录的实现过程，在此基础上进行优化，扩展为可同时对 12 路传感器进行烧录，并能通过 USB 更新 bin 文件到 STM32主控的Flash中。
+                            <br/>
+                        </p>
+                        <p>责任描述：
+                        </p>
+                        <p>1. 通过竞品，分析出每条指令的功能作用，并通过新的主控板逆向出单路传感器烧录的具体实现，从 Flash 中读出数据烧录到胎压芯片中，逆向中主要为分析 NXP 胎压传感器 Flash 的擦读时序及程序计数器、堆栈指针、状态寄存器等指令的时序把控；<p>
+                        <p>2. 实现 USB 更新胎压 bin 文件到 STM32 的 Flash 中，能实现 12 路传感器的快速同步烧录。</P>
                     </li>
                     <li>
                         <h3>如果项目太少，可以在实验楼上找项目做啊:D</h3>
